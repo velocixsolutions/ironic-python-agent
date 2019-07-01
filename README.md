@@ -2,17 +2,20 @@
 Ironic Python Agent
 
 
-Clone of official `ironic-python-agent` repository: https://github.com/openstack/ironic-python-agent 
+Clone of official `ironic-python-agent` repository: https://github.com/openstack/ironic-python-agent .
+
 This has a patch fix to skip partition validation step due to a Open Bug for Gen10 hardware.
 
 BUG link: https://storyboard.openstack.org/#!/story/2005772
 
 
 Patch applied on `ironic-python-agent/extensions/standby.py` file.
+
 Official repository file: https://github.com/openstack/ironic-python-agent/blob/master/ironic_python_agent/extensions/standby.py#L591
+
 Patched version: https://github.com/velocixsolutions/ironic-python-agent/blob/master/ironic_python_agent/extensions/standby.py#L591
 
-This patch is hosted until next release of `ironic-python-agent` is released with a fix for the above mentioned open bug.
+This patch will be hosted until next release of `ironic-python-agent` is released with a fix for the above mentioned open bug.
 
 
 Project Resources
