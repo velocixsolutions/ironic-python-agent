@@ -2,19 +2,17 @@
 Ironic Python Agent
 
 
-Overview
-========
+Clone of official `ironic-python-agent` repository: https://github.com/openstack/ironic-python-agent 
+This has a patch fix to skip partition validation step due to a Open Bug for Gen10 hardware.
 
-An agent for controlling and deploying Ironic controlled baremetal nodes.
+BUG link: https://storyboard.openstack.org/#!/story/2005772
 
-The ironic-python-agent works with the agent driver in Ironic to provision
-the node.  Starting with ironic-python-agent running on a ramdisk on the
-unprovisioned node, Ironic makes API calls to ironic-python-agent to provision
-the machine.  This allows for greater control and flexibility of the entire
-deployment process.
 
-The ironic-python-agent may also be used with the original Ironic pxe drivers
-as of the Kilo OpenStack release.
+Patch applied on `ironic-python-agent/extensions/standby.py` file.
+Official repository file: https://github.com/openstack/ironic-python-agent/blob/master/ironic_python_agent/extensions/standby.py#L591
+Patched version: https://github.com/velocixsolutions/ironic-python-agent/blob/master/ironic_python_agent/extensions/standby.py#L591
+
+This patch is hosted until next release of `ironic-python-agent` is released with a fix for the above mentioned open bug.
 
 
 Project Resources
